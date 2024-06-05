@@ -1,5 +1,5 @@
 javascript:(function() {
-  function handleKeyPress(e) {
+  document.addEventListener("keypress", function (e) {
       if (e.key === 'q' || e.keyCode === 81) {
           e.preventDefault();
           document.querySelector('[data-functional-selector="answer-0"]').click();
@@ -16,13 +16,5 @@ javascript:(function() {
           e.preventDefault();
           document.querySelector('[data-functional-selector="answer-3"]').click();
       }
-  }
-
-  document.addEventListener('keydown', handleKeyPress);
-
-  // Reapply the event listener after it's been triggered once
-  document.addEventListener('keyup', () => {
-      document.removeEventListener('keydown', handleKeyPress);
-      document.addEventListener('keydown', handleKeyPress);
   });
-  })();
+})();
