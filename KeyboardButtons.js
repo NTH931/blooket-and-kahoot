@@ -1,15 +1,15 @@
 javascript:(function() {
 document.addEventListener('keydown', e => {
-    if (e.isComposing ||e.key == "q") {
+    if (event.isComposing ||e.keyCode == 81) {
         document.querySelector('[data-functional-selector="answer-0"]').click();
     }
-    if (e.isComposing ||e.key == "a") {
+    if (event.isComposing ||e.keyCode == 65) {
         document.querySelector('[data-functional-selector="answer-1"]').click();
     }
-    if (e.isComposing ||e.key == "w") {
+    if (event.isComposing ||e.keyCode == 87) {
         document.querySelector('[data-functional-selector="answer-2"]').click();
     }
-    if (e.isComposing ||e.key == "s") {
+    if (event.isComposing ||e.keyCode == 83) {
         document.querySelector('[data-functional-selector="answer-3"]').click();
     }
 });
