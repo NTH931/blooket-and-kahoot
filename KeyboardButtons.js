@@ -1,4 +1,4 @@
-(function() {
+javascript:(function() {
   // Prompt user for characters
   const red = prompt("Enter a character for Red: ");
   const blue = prompt("Enter a character for Blue: ");
